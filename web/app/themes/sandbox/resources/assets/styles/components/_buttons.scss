@@ -1,0 +1,16 @@
+.btn {
+  &.btn-green {
+    background-color: $green;
+    color: white;
+  }
+
+  &.btn-danger {
+    background-color: $red;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+

@@ -1,0 +1,161 @@
+
+#artisan-signup-cta {
+  margin-top: 4rem;
+  background-color: $light-gray;
+
+  .container {
+    position: relative;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+
+    img {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+
+    .wrap {
+      width: 70%;
+      margin-left: auto;
+
+      h1 {
+        color: $bluish;
+        font-size: 2.8rem;
+      }
+
+      h2 {
+        color: $orange;
+        font-size: 2.4rem;
+      }
+    }
+  }
+}
+
+.footer-content {
+  border-top: 0.5rem solid $orange;
+
+  .social {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+    ul {
+      margin: 1rem 0 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+
+      li {
+        em {
+          a {
+            color: $green;
+            font-style: normal;
+          }
+        }
+      }
+
+      &.icons {
+        margin: 0 0 0 auto;
+        width: fit-content;
+
+        li {
+          margin-right: 1rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          a {
+            display: block;
+            border: 1px solid black;
+            border-radius: 50%;
+            width: 3.5rem;
+            height: 3.5rem;
+            font-size: 30px;
+            line-height: 3.5rem;
+            text-align: center;
+
+            &.fb {
+              border-color: #3e5895;
+              color: #3e5895;
+            }
+
+            &.gp {
+              border-color: #e6412b;
+              color: #e6412b;
+            }
+
+            &.tw {
+              border-color: #09a0e9;
+              color: #09a0e9;
+            }
+
+            &.rss {
+              border-color: #f46809;
+              color: #f46809;
+            }
+          }
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      li:not(:last-child)::after {
+        content: "|";
+        margin: 0 1rem;
+        color: $bluish;
+      }
+    }
+  }
+}
+
+.mid-footer {
+  background-color: $bluish2;
+  color: white;
+  padding: 2rem;
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    li {
+      a {
+        color: $light-gray;
+      }
+    }
+  }
+}
+
+.footer-newsletter {
+  margin-top: 2rem;
+}
+
+.bottom-footer {
+  background-color: #20323c;
+  padding: 1rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: $light-gray;
+
+    a {
+      color: $light-gray;
+    }
+
+    li:not(:last-child) {
+      &::after {
+        content: '|';
+        margin: 0 2rem;
+      }
+    }
+  }
+}

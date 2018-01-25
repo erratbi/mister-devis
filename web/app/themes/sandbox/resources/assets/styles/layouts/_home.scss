@@ -1,0 +1,251 @@
+#home-hero {
+  background-image: url(images/hero-bg.jpg);
+  height: 500px;
+  padding: 80px 50px;
+  margin-bottom: 0;
+
+  h1 {
+    font-weight: bold;
+    font-size: 50px;
+    width: 600px;
+
+    strong {
+      color: $red;
+    }
+  }
+
+  p {
+    font-size: 35px;
+  }
+}
+
+#how-it-works {
+  background-image: url(images/wood.png);
+  margin-top: -1.5rem;
+  padding-top: 1.5rem;
+  border-bottom: 0.4rem solid $bluish;
+  position: relative;
+
+  &::after {
+    content: '';
+    border: 1rem solid transparent;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    border-top-color: $bluish;
+  }
+
+  h2 {
+    background-color: $bluish;
+    text-align: center;
+    padding: 0.5rem;
+    color: $red;
+    position: relative;
+    margin: 0;
+
+    &::after {
+      content: '';
+      border: 1rem solid transparent;
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      border-top-color: $bluish;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0;
+
+    li {
+      background-repeat: no-repeat;
+      padding: 0.5rem 0 0.5rem 6.5rem;
+      background-size: contain;
+      display: flex;
+      width: 12rem;
+
+      &:not(:last-child)::after {
+        content: "\F105";
+        margin-left: 5rem;
+        font-family: FontAwesome;
+        font-size: 3rem;
+        color: $red;
+        font-weight: bold;
+      }
+
+      &:nth-child(1) {
+        background-image: url(images/how-it-works-step1.png);
+      }
+
+      &:nth-child(2) {
+        background-image: url(images/how-it-works-step2.png);
+      }
+
+      &:nth-child(3) {
+        background-image: url(images/how-it-works-step3.png);
+      }
+
+      &:nth-child(4) {
+        background-image: url(images/how-it-works-step4.png);
+      }
+    }
+  }
+}
+
+#home-categories-list,
+#price-guides-list {
+  padding: 2rem;
+
+  .heading {
+    display: flex;
+    margin-bottom: 2rem;
+
+    h1 {
+      color: $red;
+      font-size: 3rem;
+      margin-bottom: 0;
+      flex: 2;
+    }
+
+    p {
+      font-size: 1.7rem;
+      margin-bottom: 0;
+      padding-left: 1rem;
+      font-weight: lighter;
+      color: $bluish;
+      flex: 3;
+
+      strong {
+        color: $green;
+        font-weight: bold;
+      }
+    }
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+
+    li {
+      flex: 1;
+      flex-basis: 33.33%;
+      padding: 0 0 0.5rem;
+      perspective: 1000;
+
+      a {
+        display: block;
+        transition: color 150ms ease-out;
+        color: $blue;
+      }
+
+      .icon {
+        border: 3px solid $dark-gray;
+        margin-right: 1rem;
+        transition: 400ms;
+        transform-style: preserve-3d;
+      }
+
+      &:hover {
+        color: $orange;
+
+        .icon {
+          transform: rotateY(180deg);
+        }
+
+        //.icon {
+        //  border-color: $orange;
+        //  transform: scale(1.1);
+        //}
+      }
+    }
+  }
+
+  .text-centre {
+    text-align: center;
+
+    .btn-primary {
+      margin-top: 2rem;
+      background-color: $orange;
+      border-color: $orange;
+    }
+  }
+}
+
+#price-guides-cta {
+  margin-top: 2rem;
+  background-color: $light-gray;
+
+  .container {
+    position: relative;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+
+    img {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+
+    .wrap {
+      width: 60%;
+
+      h1 {
+        color: $bluish;
+        font-size: 2.8rem;
+      }
+
+      h2 {
+        color: $orange;
+        font-size: 2.4rem;
+      }
+
+      a {
+        color: $blue;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+#price-guides-list {
+  ul {
+    margin: 0 -1rem;
+
+    li {
+      padding: 1rem;
+
+      .icon {
+        overflow: hidden;
+        border: 0.4rem solid orange;
+
+        img {
+          width: 100%;
+          margin: 0;
+          border: none;
+        }
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 1.2rem;
+        padding: 0.5rem 0 0;
+
+        &::before {
+          content: "\F105";
+          color: $blue;
+          font-family: FontAwesome;
+        }
+
+        a {
+          color: $blue;
+          display: inline;
+        }
+      }
+    }
+  }
+}
